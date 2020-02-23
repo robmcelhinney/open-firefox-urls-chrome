@@ -12,8 +12,7 @@ def read(*relpath):
 
 setup(
     name='open_firefox_urls_chrome',
-    version='0.1.0',
-    packages=[''],
+    version='0.1.1',
     url='https://github.com/robmcelhinney/open-firefox-urls-chrome',
     license='MIT',
     author='Robert McElhinney',
@@ -30,7 +29,7 @@ setup(
     py_modules=['open_firefox_urls_chrome'],
     entry_points={
         'console_scripts': [
-            'open_firefox_urls_chrome=open_firefox_urls_chrome:main',
+            'open-firefox-urls-chrome=open_firefox_urls_chrome:main',
         ],
     },
 )

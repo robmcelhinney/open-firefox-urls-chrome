@@ -1,4 +1,14 @@
 from setuptools import setup
+from os import path
+
+
+def packagefile(*relpath):
+    return path.join(path.dirname(__file__), *relpath)
+
+
+def read(*relpath):
+    with open(packagefile(*relpath)) as f:
+        return f.read()
 
 setup(
     name='open_firefox_urls_chrome',
@@ -9,7 +19,7 @@ setup(
     author='Robert McElhinney',
     author_email='robmcelhinney@hotmail.com',
     description='Utility to get URLs currently open in Firefox and open them in Chrome',
-    long_description=open('README.txt').read(),
+    long_description=open('README.md').read(),
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         'License :: OSI Approved :: MIT License',

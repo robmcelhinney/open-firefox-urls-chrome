@@ -14,6 +14,7 @@ setup(
     name='open_firefox_urls_chrome',
     version='0.1.1',
     url='https://github.com/robmcelhinney/open-firefox-urls-chrome',
+    download_url='https://github.com/robmcelhinney/open-firefox-urls-chrome/archive/0.1.1.tar.gz',
     license='MIT',
     author='Robert McElhinney',
     author_email='robmcelhinney@hotmail.com',
